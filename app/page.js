@@ -1,8 +1,12 @@
+"use client";
+import Hero from "@/components/Hero";
 
-export default function Home() {
+const Home = () => {
   return (
-    <main>
-      home
-    </main>
+  <div className="h-full overflow-x-hidden">
+    <Hero />
+  </div>
   );
-}
+};
+
+export default Home;
