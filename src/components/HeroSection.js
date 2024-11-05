@@ -8,8 +8,6 @@ function HeroSection() {
     return (
         <div className='hero-container'>
             <video src={coffeeVideo} autoPlay loop muted />
-            <h1> TEST MESSAGE </h1>
-            <p> TESTERRRRR</p>
             <div className='hero-btns'>
                 <Button 
                 className='btns' 
@@ -20,6 +18,12 @@ function HeroSection() {
                 <Button className='btns' buttonStyle='btn--outline'
                 buttonSize='btn--large'>MENU 2</Button>
             </div>
+            <div className='hero-text'>
+            <h2> award-winning wines, high-quality coffee, small plates and pastries </h2>
+            </div>
+            
+           
+           
             
         </div>
     )

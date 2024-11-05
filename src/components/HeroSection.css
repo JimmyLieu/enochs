@@ -16,3 +16,13 @@ video {
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2)
 }
 
+.hero-text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero-text h2 {
+    color: white;
+}
