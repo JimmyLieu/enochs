@@ -25,4 +25,10 @@ video {
 
 .hero-text h2 {
     color: white;
+    font-size: 32px;
+    margin-top: 32px;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
 }
+

@@ -46,7 +46,9 @@
   }
   
   .nav-item {
-    height: 80px;
+    height: 200px;
+    position: flex;
+    
   }
   
   .nav-links {
