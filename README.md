@@ -18,7 +18,6 @@ Enoch's Wine & Coffee House Tyler was born out of Enoch's Stomp Vineyard & Winer
 - React.js
 - CSS3
 - JavaScript
-- [Any other major technologies/frameworks used]
 
 ## 🚀 Getting Started
 
@@ -41,4 +40,4 @@ Enoch's Wine & Coffee House Tyler was born out of Enoch's Stomp Vineyard & Winer
 
 4. Open your browser and navigate to `http://localhost:3000` to view the website
 
-    
+
