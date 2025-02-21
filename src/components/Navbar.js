@@ -7,8 +7,20 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+    const handleClick = () => {
+        setClick(!click);
+        // Toggle body scroll
+        if (!click) {
+            document.body.classList.add('menu-open');
+        } else {
+            document.body.classList.remove('menu-open');
+        }
+    };
+
+    const closeMobileMenu = () => {
+        setClick(false);
+        document.body.classList.remove('menu-open');
+    };
 
     const showButton = () => {
         if(window.innerWidth <= 960) {

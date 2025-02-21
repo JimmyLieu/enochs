@@ -1,0 +1,114 @@
+.menu-container {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fafafa;
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px 0;
+}
+
+.menu-header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.menu-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.menu-section {
+    margin-bottom: 60px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.menu-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #E8C5B0;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    padding: 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-header h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.price {
+    font-weight: 600;
+    color: #E8C5B0;
+    font-size: 1.1rem;
+}
+
+.menu-item p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-container {
+        padding: 60px 15px;
+    }
+
+    .menu-section {
+        padding: 30px 20px;
+        margin-bottom: 40px;
+    }
+
+    .menu-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item {
+        padding: 15px;
+    }
+}
