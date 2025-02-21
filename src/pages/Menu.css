@@ -32,6 +32,7 @@
 }
 
 .menu-section {
+    scroll-margin-top: 80px;
     margin-bottom: 1.5rem;
 }
 
@@ -100,15 +101,16 @@
 }
 
 .category-nav {
-    display: none; /* Hidden by default on desktop */
+    display: none;
     position: sticky;
     top: 0;
     background: white;
-    padding: 1rem;
+    padding: 0.75rem;
     overflow-x: auto;
     white-space: nowrap;
     border-bottom: 1px solid #eee;
     z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .category-nav button {
@@ -139,7 +141,7 @@
     }
 
     .category-nav {
-        display: flex; /* Show on mobile */
+        display: flex !important; /* Force display on mobile */
         margin-bottom: 1rem;
     }
 
@@ -178,4 +180,13 @@
     .menu-item p {
         font-size: 0.9rem;
     }
+}
+
+html {
+    scroll-padding-top: 80px;
+}
+
+.menu-section {
+    scroll-margin-top: 80px;
+    margin-bottom: 1.5rem;
 }
