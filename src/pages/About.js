@@ -1,7 +1,25 @@
 import React from 'react';
+import TeamMember from '../components/TeamMember';
 import './About.css';
-
 function About() {
+    const teamMembers = [
+        {
+            name: "John Doe",
+            role: "Owner",
+            image: "Barista.png"  
+        },
+        {
+            name: "Jane Smith",
+            role: "Wine Director",
+            image: "jane.jpg"  
+        },
+        {
+            name: "Mike Johnson",
+            role: "Head Barista",
+            image: "mike.jpg" 
+        }
+    ];
+
     return (
         <div className="about-container">
             <section className="about-hero">
@@ -41,10 +59,18 @@ function About() {
                 </div>
             </section>
 
-            <section className="about-team">
+            <section className="team-section">
                 <h2>Meet Our Team</h2>
+                <p className="team-intro">The passionate individuals behind Enoch's Wine & Coffee House Tyler.</p>
                 <div className="team-grid">
-                    {/* Add team member components here if desired */}
+                    {teamMembers.map((member, index) => (
+                        <TeamMember
+                            key={index}
+                            name={member.name}
+                            role={member.role}
+                            image={member.image}
+                        />
+                    ))}
                 </div>
             </section>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
-import '../../App.css'
-import HeroSection from '../HeroSection.js'
-import Cards from '../Cards.js'
+import '../App.css' 
+import HeroSection from '../components/HeroSection.js'
+import Cards from '../components/Cards.js'
 
 function Home () {
     return (
