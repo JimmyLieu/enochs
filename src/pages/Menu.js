@@ -69,98 +69,100 @@ function Menu() {
                 <p>Carefully curated selections of coffee, wine, and small plates</p>
             </div>
 
-            <section className='menu-section'>
-                <h2>Coffee & Espresso</h2>
-                <div className='menu-items'>
-                    {menuData.coffee.map((item, index) => (
-                        <div className='menu-item' key={index}>
-                            <div className='item-header'>
-                                <h3>{item.name}</h3>
-                                <span className='price'>${item.price}</span>
+            <div className='menu-card'>
+                <section className='menu-section'>
+                    <h2>Coffee & Espresso</h2>
+                    <div className='menu-items'>
+                        {menuData.coffee.map((item, index) => (
+                            <div className='menu-item' key={index}>
+                                <div className='item-header'>
+                                    <h3>{item.name}</h3>
+                                    <span className='price'>${item.price}</span>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
-
-            <section className='menu-section'>
-                <h2>Tea & Non-Coffee Drinks</h2>
-                <div className='menu-items'>
-                    {menuData.tea.map((item, index) => (
-                        <div className='menu-item' key={index}>
-                            <div className='item-header'>
-                                <h3>{item.name}</h3>
-                                <span className='price'>${item.price}</span>
-                            </div>
-                            {item.description && <p>{item.description}</p>}
-                        </div>
-                    ))}
-                </div>
-            </section>
-            <section className='menu-section'>
-                <h2>Sizing & Add-Ons</h2>
-                <div className='menu-items'>
-                    <div className='menu-item'>
-                        <h3>Drink Sizes</h3>
-                        <div className='item-header'>
-                            <span>Hot:</span>
-                            <span>{menuData.additions.sizes.hot.join(' / ')}</span>
-                        </div>
-                        <div className='item-header'>
-                            <span>Iced:</span>
-                            <span>{menuData.additions.sizes.iced.join(' / ')}</span>
-                        </div>
+                        ))}
                     </div>
+                </section>
 
-                    {menuData.additions.milks.map((item, index) => (
-                        <div className='menu-item' key={index}>
+                <section className='menu-section'>
+                    <h2>Tea & Non-Coffee Drinks</h2>
+                    <div className='menu-items'>
+                        {menuData.tea.map((item, index) => (
+                            <div className='menu-item' key={index}>
+                                <div className='item-header'>
+                                    <h3>{item.name}</h3>
+                                    <span className='price'>${item.price}</span>
+                                </div>
+                                {item.description && <p>{item.description}</p>}
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                <section className='menu-section'>
+                    <h2>Sizing & Add-Ons</h2>
+                    <div className='menu-items'>
+                        <div className='menu-item'>
+                            <h3>Drink Sizes</h3>
                             <div className='item-header'>
-                                <h3>{item.name}</h3>
-                                <span className='price'>${item.price}</span>
+                                <span>Hot:</span>
+                                <span>{menuData.additions.sizes.hot.join(' / ')}</span>
+                            </div>
+                            <div className='item-header'>
+                                <span>Iced:</span>
+                                <span>{menuData.additions.sizes.iced.join(' / ')}</span>
                             </div>
                         </div>
-                    ))}
 
-                    {menuData.additions.syrups.map((item, index) => (
-                        <div className='menu-item' key={index}>
-                            <div className='item-header'>
-                                <h3>{item.name}</h3>
-                                <span className='price'>${item.price}</span>
+                        {menuData.additions.milks.map((item, index) => (
+                            <div className='menu-item' key={index}>
+                                <div className='item-header'>
+                                    <h3>{item.name}</h3>
+                                    <span className='price'>${item.price}</span>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
-            <section className='menu-section'>
-                <h2>Wine Selection</h2>
-                <div className='menu-items'>
-                    {menuData.wine.map((item, index) => (
-                        <div className='menu-item' key={index}>
-                            <div className='item-header'>
-                                <h3>{item.name}</h3>
-                                <span className='price'>${item.price}</span>
-                            </div>
-                            <p>Glass / Bottle</p>
-                        </div>
-                    ))}
-                </div>
-            </section>
+                        ))}
 
-            <section className='menu-section'>
-                <h2>Small Plates & Pastries</h2>
-                <div className='menu-items'>
-                    {menuData.food.map((item, index) => (
-                        <div className='menu-item' key={index}>
-                            <div className='item-header'>
-                                <h3>{item.name}</h3>
-                                <span className='price'>${item.price}</span>
+                        {menuData.additions.syrups.map((item, index) => (
+                            <div className='menu-item' key={index}>
+                                <div className='item-header'>
+                                    <h3>{item.name}</h3>
+                                    <span className='price'>${item.price}</span>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
+                        ))}
+                    </div>
+                </section>
 
-            
+                <section className='menu-section'>
+                    <h2>Wine Selection</h2>
+                    <div className='menu-items'>
+                        {menuData.wine.map((item, index) => (
+                            <div className='menu-item' key={index}>
+                                <div className='item-header'>
+                                    <h3>{item.name}</h3>
+                                    <span className='price'>${item.price}</span>
+                                </div>
+                                <p>Glass / Bottle</p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                <section className='menu-section'>
+                    <h2>Small Plates & Pastries</h2>
+                    <div className='menu-items'>
+                        {menuData.food.map((item, index) => (
+                            <div className='menu-item' key={index}>
+                                <div className='item-header'>
+                                    <h3>{item.name}</h3>
+                                    <span className='price'>${item.price}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            </div>
         </div>
     );
 }

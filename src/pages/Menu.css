@@ -22,12 +22,21 @@
     color: #666;
 }
 
-.menu-section {
-    margin-bottom: 60px;
+.menu-card {
     background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.menu-section {
+    margin-bottom: 2rem;
+}
+
+.menu-section:last-child {
+    margin-bottom: 0;
 }
 
 .menu-section h2 {
@@ -55,15 +64,15 @@
 }
 
 .menu-item {
-    padding: 20px;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    border: 1px solid #eee;
+    border: none;
+    box-shadow: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
 }
 
-.menu-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+.menu-item:last-child {
+    border-bottom: none;
 }
 
 .item-header {
