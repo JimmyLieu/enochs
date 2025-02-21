@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../App.css';
 import './HeroSection.css';
 import coffeeVideo from '../assets/Coffee.mp4';
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
     const [isVisible, setIsVisible] = useState(false);
@@ -29,8 +30,9 @@ function HeroSection() {
                     Award-winning wines • Artisanal coffee • Gourmet plates • Fresh pastries
                 </p>
                 <div className='hero-cta'>
-                    <button className='btn-primary'>View Menu</button>
-                    
+                    <Link to="/menu">
+                        <button className='btn-primary'>View Menu</button>
+                    </Link>
                 </div>
             </div>
         </div>
