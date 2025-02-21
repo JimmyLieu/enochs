@@ -99,25 +99,83 @@
     line-height: 1.5;
 }
 
+.category-nav {
+    display: none; /* Hidden by default on desktop */
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 1rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+}
+
+.category-nav button {
+    background: #E8C5B0;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.category-nav button:last-child {
+    margin-right: 0;
+}
+
+/* Mobile optimizations */
 @media screen and (max-width: 768px) {
     .menu-container {
-        padding: 60px 15px;
+        padding: 20px 10px;
     }
 
-    .menu-section {
-        padding: 30px 20px;
-        margin-bottom: 40px;
+    .menu-card {
+        padding: 0;
+        margin: 1rem auto;
+        box-shadow: none;
+    }
+
+    .category-nav {
+        display: flex; /* Show on mobile */
+        margin-bottom: 1rem;
+    }
+
+    .menu-header {
+        margin-bottom: 20px;
+        padding: 20px 0;
     }
 
     .menu-header h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .menu-section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
     }
 
     .menu-items {
         grid-template-columns: 1fr;
+        gap: 10px;
     }
 
-    .menu-item {
-        padding: 15px;
+    .item-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    .menu-item p {
+        font-size: 0.9rem;
     }
 }

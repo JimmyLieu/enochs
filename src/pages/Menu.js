@@ -70,7 +70,25 @@ function Menu() {
             </div>
 
             <div className='menu-card'>
-                <section className='menu-section'>
+                <div className='category-nav'>
+                    <button onClick={() => document.getElementById('coffee').scrollIntoView({ behavior: 'smooth' })}>
+                        Coffee
+                    </button>
+                    <button onClick={() => document.getElementById('tea').scrollIntoView({ behavior: 'smooth' })}>
+                        Tea
+                    </button>
+                    <button onClick={() => document.getElementById('additions').scrollIntoView({ behavior: 'smooth' })}>
+                        Add-Ons
+                    </button>
+                    <button onClick={() => document.getElementById('wine').scrollIntoView({ behavior: 'smooth' })}>
+                        Wine
+                    </button>
+                    <button onClick={() => document.getElementById('food').scrollIntoView({ behavior: 'smooth' })}>
+                        Food
+                    </button>
+                </div>
+
+                <section id="coffee" className='menu-section'>
                     <h2>Coffee & Espresso</h2>
                     <div className='menu-items'>
                         {menuData.coffee.map((item, index) => (
@@ -84,7 +102,7 @@ function Menu() {
                     </div>
                 </section>
 
-                <section className='menu-section'>
+                <section id="tea" className='menu-section'>
                     <h2>Tea & Non-Coffee Drinks</h2>
                     <div className='menu-items'>
                         {menuData.tea.map((item, index) => (
@@ -99,7 +117,7 @@ function Menu() {
                     </div>
                 </section>
 
-                <section className='menu-section'>
+                <section id="additions" className='menu-section'>
                     <h2>Sizing & Add-Ons</h2>
                     <div className='menu-items'>
                         <div className='menu-item'>
@@ -134,7 +152,7 @@ function Menu() {
                     </div>
                 </section>
 
-                <section className='menu-section'>
+                <section id="wine" className='menu-section'>
                     <h2>Wine Selection</h2>
                     <div className='menu-items'>
                         {menuData.wine.map((item, index) => (
@@ -149,7 +167,7 @@ function Menu() {
                     </div>
                 </section>
 
-                <section className='menu-section'>
+                <section id="food" className='menu-section'>
                     <h2>Small Plates & Pastries</h2>
                     <div className='menu-items'>
                         {menuData.food.map((item, index) => (
